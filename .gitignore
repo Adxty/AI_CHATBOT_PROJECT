@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+rasa-env/
+models/
+*.db
+.DS_Store

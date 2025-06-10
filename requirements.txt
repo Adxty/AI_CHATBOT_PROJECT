@@ -1,0 +1,26 @@
+rasa==3.6.15
+numpy==1.23.5
+urllib3==1.26.18
+multidict==5.2.0
+sentry-sdk==2.15.0
+tensorflow-intel==2.12.0
+botocore==1.38.32
+sanic==21.12.2
+structlog-sentry==2.2.1
+# Core packages
+rasa==3.6.15
+numpy==1.23.5  # Resolves tensorflow conflict
+urllib3==1.26.18  # Resolves botocore conflict
+multidict==5.2.0  # Resolves sanic conflict
+sentry-sdk==2.15.0  # Resolves structlog-sentry conflict
+
+# Additional critical dependencies
+tensorflow-intel==2.12.0
+botocore==1.38.32
+sanic==21.12.2
+structlog-sentry==2.2.1
+sqlalchemy<2.0
+rasa==3.6.15
+python-dotenv==1.0.0
+sqlalchemy==1.4.52
+setuptools==58.2.0

@@ -1,0 +1,18 @@
+recipe: default.v1
+language: en
+assistant_id: my_chatbot_v1
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 100
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: RulePolicy
